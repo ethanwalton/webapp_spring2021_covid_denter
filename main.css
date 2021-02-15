@@ -1,0 +1,17 @@
+h1 {
+        position: relative;
+        border-color:grey;
+        border-style: solid;
+        border-width: 5px 5px 5px 0;
+        background: whitesmoke;
+        margin: 0 0 15px -15px;
+        padding: 5px 15px;
+        box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+              
+}
+
+p.footer {
+        text-align: center;
+        background-color: lightsteelblue;
+        font-style: italic;
+}
