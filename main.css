@@ -15,3 +15,17 @@ p.footer {
         background-color: lightsteelblue;
         font-style: italic;
 }
+
+legend.breaks {
+        text-align: center;
+        font-style: normal;
+        background-color: lightblue;
+}
+
+h3.subheading {
+        text-align: center;
+}
+
+h6.subheading {
+        text-align: center;
+}

@@ -21,7 +21,7 @@
         <article>
             <form>
                 <fieldset class="border">
-                    <legend class="w-auto"> Part 1: Patient Information</legend>
+                    <legend class="breaks"> Part 1: Patient Information</legend>
                     <div class="form-group row">
                         <div class="col-sm-2">
                             <label for="txtFirstName" class="col-form-label">
@@ -33,7 +33,7 @@
                             <input type="text" id="txtFirstName" name="txtFirstName" required class="form-control"
                                 placeholder="First Name" required>
                         </div>
-                    </div>
+                    </div><br>
 
                     <div class="form-group row">
                         <div class="col-sm-2">
@@ -46,7 +46,7 @@
                             <input type="text" id="txtLastName" name="txtLastName" required class="form-control"
                                 placeholder="Last Name" required>
                         </div>
-                    </div>
+                    </div><br>
 
 
                     <fieldset class="border form-group">
@@ -69,7 +69,7 @@
                                         class="form-check-input">
                                     <label for="rbOther" class="form-check-label">Other</label>
                                 </div>
-                    </fieldset>
+                    </fieldset><br>
 
 
                     <div class="row form-group">
@@ -80,7 +80,7 @@
                             <input type="tel" id="txtTel" name="txtTel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                                 class="form-control" placeholder="(555)-555-1234">
                         </div>
-                    </div>
+                    </div><br>
 
                     <div class="row form-group">
                         <label for="txtEmail" class="col-sm-2 col-form-label">
@@ -90,7 +90,7 @@
                             <input type="email" id="txtEmail" name="txtEmail" required class="form-control"
                                 placeholder="name@example.com">
                         </div>
-                    </div>
+                    </div><br>
 
 
                     <div class="row form-group">
@@ -116,7 +116,7 @@
                             <input type="text" id="txtZip" name="txtZip" required class="form-control"
                                 placeholder="Zip Code" pattern=[0-9]{5}>
                         </div>
-                    </div>
+                    </div><br>
 
                     <div class="row form-group">
                         <label for="txtDOB" class="col-sm-2 col-form-label">
@@ -133,9 +133,10 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend> Part 2: Potential Symptoms</legend>
-                    <div class="alert-primary">
-                        <h3> If you've had any of these symptoms, select yes for the items below</h3>
+                    <legend class="breaks"> Part 2: Potential Symptoms</legend>
+                    <div class="alert-heading">
+                        <h3 class="subheading"> If you've had any of these symptoms, select yes for the items below</h3>
+                        <h6 class="subheading"> Please click the bar for dropdown options to select yes or no for each symptom</h6>
                     </div>
 
                     <div class="row form-group">
@@ -148,123 +149,122 @@
                                 <option value="Yes">Yes</option>
                             </select>
                         </div>
+                    </div><br>
+
+                    <div class="row form-group">
+                        <label for="ddcough" class="col-sm2 col-form-label">
+                            Cough:
+                        </label>
+                        <div class="row form-group">
+                            <select id="ddcough" name="ddcough" class="form-control">
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                        </div>
+                    </div><br>
+
+                    <div class="row form-group">
+                        <label for="ddfatigue" class="col-sm-2 col-form-label">
+                            Signs of Fatigue:
+                        </label>
+                    <div class="row form-group">
+                        <select id="ddfatigue" name="ddfatigue" class="form-control">
+                            <option value="No" selected>No</option>
+                            <option value="Yes">Yes</option>
+                        </select>
                     </div>
+                    </div><br>
 
-                    <p>
-                        <label for="ddcough">
-                            <span> Cough</span>
-                            <strong><abbr title="required">*</abbr></strong>
+                    <div class="row form-group">
+                        <label for="ddmuscle" class="col-sm-2 col-form-label">
+                            Muscle or Body Aches:
                         </label>
-                        <select id="ddcough" name="ddcough">
+                    <div class="row form-group">
+                        <select id="ddmuscle" name="ddmuscle" class="form-control">
                             <option value="No" selected>No</option>
                             <option value="Yes">Yes</option>
                         </select>
+                    </div>
+                    </div><br>
 
-                    </p>
-                    <p>
-                        <label for="ddBreath">
-                            <span> Shortness of Breath </span>
-                            <strong><abbr title="required">*</abbr></strong>
+                    <div class="row form-group">
+                        <label for="ddheadache" class="col-sm-2 col-form-label">
+                            Frequent Headaches:
                         </label>
-                        <select id="ddBreath" name="ddBreath">
+                    <div class="row form-group">
+                        <select id="ddheadache" name="ddheadache" class="form-control">
                             <option value="No" selected>No</option>
                             <option value="Yes">Yes</option>
                         </select>
+                    </div>
+                    </div><br>
 
-                    </p>
-                    <p>
-                        <label for="ddfatigue">
-                            <span> Fatigue</span>
-                            <strong><abbr title="required">*</abbr></strong>
+                    <div class="row form-group">
+                        <label for="ddsmell" class="col-sm-2 col-form-label">
+                            Loss of Taste or Smell:
                         </label>
-                        <select id="ddfatigue" name="ddfatigue">
+                    <div class="row form-group">
+                        <select id="ddsmell" name="ddsmell" class="form-control">
                             <option value="No" selected>No</option>
                             <option value="Yes">Yes</option>
                         </select>
+                    </div>
+                    </div><br>
 
-                    </p>
-                    <p>
-                        <label for="ddMuscle">
-                            <span> Muscle or Body Aches</span>
-                            <strong><abbr title="required">*</abbr></strong>
+                    <div class="row form-group">
+                        <label for="ddthroat" class="col-sm-2 col-form-label">
+                            Sore Throat:
                         </label>
-                        <select id="ddMuscle" name="ddMuscle">
+                    <div class="row form-group">
+                        <select id="ddthroat" name="ddthroat" class="form-control">
                             <option value="No" selected>No</option>
                             <option value="Yes">Yes</option>
                         </select>
+                    </div>
+                    </div><br>
 
-                    </p>
-                    <p>
-                        <label for="ddheadahce">
-                            <span> Headache</span>
-                            <strong><abbr title="required">*</abbr></strong>
+                    <div class="row form-group">
+                        <label for="ddnose" class="col-sm-2 col-form-label">
+                            Congestion/Runny Nose:
                         </label>
-                        <select id="ddheadahce" name="ddheadahce">
+                    <div class="row form-group">
+                        <select id="ddnose" name="ddnose" class="form-control">
                             <option value="No" selected>No</option>
                             <option value="Yes">Yes</option>
                         </select>
+                    </div>
+                    </div><br>
 
-                    </p>
-                    <p>
-                        <label for="ddsmell">
-                            <span> Loss of Taste or Smell</span>
-                            <strong><abbr title="required">*</abbr></strong>
+                    <div class="row form-group">
+                        <label for="ddvomit" class="col-sm-2 col-form-label">
+                            Nausea or Vomiting:
                         </label>
-                        <select id="ddsmell" name="ddsmell">
+                    <div class="row form-group">
+                        <select id="ddvomit" name="ddvomit" class="form-control">
                             <option value="No" selected>No</option>
                             <option value="Yes">Yes</option>
                         </select>
+                    </div>
+                    </div><br>
 
-                    </p>
-                    <p>
-                        <label for="ddthroat">
-                            <span> Sore throat</span>
-                            <strong><abbr title="required">*</abbr></strong>
+                    <div class="row form-group">
+                        <label for="ddruns" class="col-sm-2 col-form-label">
+                            Diarrhea:
                         </label>
-                        <select id="ddthroat" name="ddthroat">
+                    <div class="row form-group">
+                        <select id="ddruns" name="ddruns" class="form-control">
                             <option value="No" selected>No</option>
                             <option value="Yes">Yes</option>
                         </select>
+                    </div>
+                    </div><br>
 
-                    </p>
-                    <p>
-                        <label for="ddnose">
-                            <span> Congestion or Runny Nose</span>
-                            <strong><abbr title="required">*</abbr></strong>
-                        </label>
-                        <select id="ddnose" name="ddnose">
-                            <option value="No" selected>No</option>
-                            <option value="Yes">Yes</option>
-                        </select>
-
-                    </p>
-                    <p>
-                        <label for="ddvomit">
-                            <span> Nausea or Vomiting</span>
-                            <strong><abbr title="required">*</abbr></strong>
-                        </label>
-                        <select id="ddvomit" name="ddvomit">
-                            <option value="No" selected>No</option>
-                            <option value="Yes">Yes</option>
-                        </select>
-
-                    </p>
-                    <p>
-                        <label for="ddruns">
-                            <span> Diarrhea</span>
-                            <strong><abbr title="required">*</abbr></strong>
-                        </label>
-                        <select id="ddruns" name="ddruns">
-                            <option value="No" selected>No</option>
-                            <option value="Yes">Yes</option>
-                        </select>
-
-                    </p>
+                    
                 </fieldset>
 
                 <fieldset>
 
-                    <legend> Part 3: Other Questions</legend>
+                    <legend class="breaks"> Part 3: Other Questions</legend><br>
                     <label for="ddContact">
                         <span> Have you had contact (within 6 feet for > 15 minutes), or caring for someone who is
                             diagnosed with
