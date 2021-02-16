@@ -12,7 +12,7 @@ h1 {
 
 p.footer {
         text-align: center;
-        background-color: lightsteelblue;
+        background-color: lightblue;
         font-style: italic;
 }
 
@@ -28,4 +28,22 @@ h3.subheading {
 
 h6.subheading {
         text-align: center;
+}
+
+img {
+        float: right;
+        width: 20%;
+        height: 40%;
+
+}
+
+.coolheader img {
+        float: right;
+        width: 20%;
+      }
+      
+.coolheader h2 {
+        position: static;
+        top: 18px;
+        left: 10px;
 }
