@@ -49,9 +49,7 @@ img {
         left: 10px;
 }
 
-* {
-        background-color: whitesmoke;
-}
+
 
 select {
         -webkit-appearance: none;
@@ -112,3 +110,15 @@ select {
       #lab_social_icon_footer #social-em:hover {
         color: #f39c12;
       }
+
+.invisible {
+  display: none;
+}
+
+.errorMessage {
+  color: red;
+}
+
+.hasError {
+  background-color: yellow;
+}

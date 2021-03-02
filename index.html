@@ -23,7 +23,7 @@
             <h2> Please fill out this form:</h2>
         </div>
         <article>
-            <form>
+            <form onsubmit="return validateForm()" id="mainForm" novalidate>
                 <fieldset class="border">
                     <legend class="breaks"> Part 1: Patient Information</legend>
                     <div class="form-group row">
@@ -129,7 +129,9 @@
                         <div class="col-sm-10">
                             <input type="date" id="txtDOB" name="txtDOB" required class="form-control"
                                 placeholder="Date of Birth">
+                            <div id="divDoBError" class=" col-sm-5 invisible errorMessage"></div>
                         </div>
+
                     </div><br>
 
 
@@ -308,7 +310,8 @@
                                 <br>
                             </label>
                             <div class="row form-group">
-                                <select id="ddCountry" name="ddCountry" class="form-control">
+                                <select id="ddCountry" name="ddCountry" class="form-control"
+                                    onchange="updateCountryView()">
                                     <option value="No" selected>No</option>
                                     <option value="Yes">Yes</option>
                                 </select>
@@ -316,7 +319,7 @@
                         </div>
                         <br>
 
-                        <div>
+                        <div id="divCountry" class="row form-group invisible">
                             <label for="txtCountry" class="col-md-6 col-form-label">
                                 Which countries? (separate with comma)
                             </label>
@@ -324,6 +327,7 @@
                             <div class="col">
                                 <input type="text" id="txtCountry" name="txtCountry" required class="form-control"
                                     placeholder="United States, etc..">
+                                <div id="divCountryError" class=" col-sm-5 invisible errorMessage"></div>
                             </div>
                         </div>
                     </fieldset>
@@ -376,6 +380,7 @@
             integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
             crossorigin="anonymous"></script>
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="/js/script.js"></script>
         <p class="footer">@Copyright 2021<br>
             All rights reserved. Powered By <b>Ethan's Coding</b>
         <div class="container">
